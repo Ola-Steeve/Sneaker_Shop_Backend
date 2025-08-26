@@ -1,15 +1,24 @@
 {
-  "name": "server",
+  "name": "sneaker-shop-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend API for Sneaker Shop e-commerce platform",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "test": "node validate.js",
+    "test:full": "echo \"Full integration tests would require database connection\"",
+    "lint": "echo \"No linter configured yet\"",
+    "docs": "echo \"Documentation available at ./docs/index.html\"",
+    "validate": "node validate.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["ecommerce", "api", "nodejs", "express", "mongodb", "sneakers"],
+  "author": "Ola-Steeve",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ola-Steeve/Sneaker_Shop_Backend.git"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.1",
